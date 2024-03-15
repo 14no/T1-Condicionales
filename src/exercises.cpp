@@ -18,10 +18,15 @@ void exercise_1(string s1, string s2, string s3) {
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
-  /*
-  double A, B, C;
   cin >> A >> B >> C;
-  */
+  double D = B * - 4 * A * C;
+  if (D >= 0 && A != 0)
+    double d_sqr = sqrt(D);
+    double x1 = -B +(d_sqr) / (2 * A);
+    double x2 = (-B -d_sqr) / (2 * A);
+    cout << x1 << endl;
+    cout << x2 << endl;
+  
 
 }
 
@@ -62,6 +67,15 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
+  cin >> a >> b;
+  if (a < 0 || b < 0){
+    cout << 0;
+  } else {
+    int sum = a + b;
+    string s = to_string(sum);
+    int lenght = s.size();
+    cout << sum * lenght;
+  }
 }
 
 string exercise_11(int number) {
