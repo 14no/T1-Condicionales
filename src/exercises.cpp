@@ -20,8 +20,6 @@ void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
   cin >> A >> B >> C;
   double D = B * B - 4 * A * C;
-  if ()
-
   if (D >= 0 && A != 0) {
     double d_sqr = sqrt(D);
     double x1 = (-B + d_sqr) / (2 * A);
