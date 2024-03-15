@@ -18,13 +18,15 @@ void exercise_1(string s1, string s2, string s3) {
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
-  double D = B * - 4 * A * C;
+  cin >> A >> B >> C;
+  double D = B * B - 4 * A * C;
+  if ()
+
   if (D >= 0 && A != 0) {
     double d_sqr = sqrt(D);
-    double x1 = (-B +d_sqr) / (2 * A);
+    double x1 = (-B + d_sqr) / (2 * A);
     double x2 = (-B - d_sqr) / (2 * A);
-    cout << x1 << endl;
-    cout << x2 << endl;
+    cout << x1 << x2 << endl;
   }
 }
 
