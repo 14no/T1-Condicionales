@@ -31,8 +31,7 @@ void exercise_3(int a, int b) {
   if (b == 0) {
     cout << "Imposible";
   } else {
-    int c = a/b;
-    cout << c;
+    cout << a/b;
   }
 }
 
