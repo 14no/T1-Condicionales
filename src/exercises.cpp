@@ -98,7 +98,7 @@ string exercise_11(int number) {
   } else {
     cout << "Esto no es de Fibonacci";
   }
-  return "";
+  return "number";
 }
 
 void exercise_12(string color1, int numb1,
