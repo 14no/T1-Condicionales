@@ -6,11 +6,24 @@ using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
-  cout << "a" << endl;
+  string s1, s2, s3;
+  cin >> s1 >> s2 >> s3;
+  string min = s1;
+  if (s2 < min) {
+    min = s2;
+  } if (s3 < min) {
+      min = s3;
+  }
+  cout << min;
 }
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
+  /*
+  double A, B, C;
+  cin >> A >> B >> C;
+  */
+
 }
 
 void exercise_3(int a, int b) {
