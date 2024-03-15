@@ -19,12 +19,12 @@ void exercise_1(string s1, string s2, string s3) {
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
   cin >> A >> B >> C;
-  double D = B * B - 4 * A * C;
+  double arg = B * B - 4 * A * C;
   if (D >= 0 && A != 0) {
-    double d_sqr = sqrt(D);
-    double x1 = (-B + d_sqr) / (2 * A);
-    double x2 = (-B - d_sqr) / (2 * A);
-    cout << x1 << x2 << endl;
+    double sqrt_arg = sqrt(arg);
+    double x1 = (-B + sqrt_arg) / (2 * A);
+    double x2 = (-B - sqrt_arg) / (2 * A);
+    cout << x1 << x2;
   }
 }
 
