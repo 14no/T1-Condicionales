@@ -20,7 +20,7 @@ void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
   cin >> A >> B >> C;
   double arg = B * B - 4 * A * C;
-  if (D >= 0 && A != 0) {
+  if (arg >= 0 && A != 0) {
     double sqrt_arg = sqrt(arg);
     double x1 = (-B + sqrt_arg) / (2 * A);
     double x2 = (-B - sqrt_arg) / (2 * A);
