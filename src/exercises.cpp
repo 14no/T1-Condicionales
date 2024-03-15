@@ -6,7 +6,6 @@ using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
-  string s1, s2, s3;
   cin >> s1 >> s2 >> s3;
   string min = s1;
   if (s2 < min) {
