@@ -20,14 +20,13 @@ void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
   cin >> A >> B >> C;
   double D = B * - 4 * A * C;
-  if (D >= 0 && A != 0)
+  if (D >= 0 && A != 0) {
     double d_sqr = sqrt(D);
-    double x1 = -B +(d_sqr) / (2 * A);
-    double x2 = (-B -d_sqr) / (2 * A);
+    double x1 = (-B +d_sqr) / (2 * A);
+    double x2 = (-B - d_sqr) / (2 * A);
     cout << x1 << endl;
     cout << x2 << endl;
-  
-
+  }
 }
 
 void exercise_3(int a, int b) {
@@ -74,7 +73,8 @@ int exercise_10(int a, int b) {
     int sum = a + b;
     string s = to_string(sum);
     int lenght = s.size();
-    cout << sum * lenght;
+    int result = sum * lenght;
+    cout << result;
   }
 }
 
@@ -97,6 +97,7 @@ string exercise_13(int age, int years_of_experience) {
 
 string exercise_14(int number_of_docs) {
   // TODO: YOUR CODE HERE
+
   return "";
 }
 
