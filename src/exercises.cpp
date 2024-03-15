@@ -21,8 +21,8 @@ void exercise_2(double A, double B, double C) {
   cin >> A >> B >> C;
   if (A != 0) {
     double r = B * B - 4 * A * C;
-    double x1 = (-B + sqrt(arg)) / (2 * A);
-    double x2 = (-B - sqrt(arg)) / (2 * A);
+    double x1 = (-B + sqrt(r)) / (2 * A);
+    double x2 = (-B - sqrt(r)) / (2 * A);
     cout << x1 << x2;
     
   }
