@@ -19,10 +19,11 @@ void exercise_1(string s1, string s2, string s3) {
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
   cin >> A >> B >> C;
-  if (A != 0) {
-    double r = B * B - 4 * A * C;
-    double x1 = (-B + sqrt(r)) / (2 * A);
-    double x2 = (-B - sqrt(r)) / (2 * A);
+  double arg = B * B - 4 * A * C;
+  if (arg >= 0 && A != 0) {
+    double sarg = sqrt(arg);
+    double x1 = (-B + sarg) / (2 * A);
+    double x2 = (-B - sarg) / (2 * A);
     cout << x1 << x2;
     
   }
@@ -34,7 +35,7 @@ void exercise_3(int a, int b) {
   if (b == 0) {
     cout << "Imposible";
   } else {
-    cout << a/b;
+    cout << a / b;
   }
 }
 
