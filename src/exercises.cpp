@@ -20,11 +20,11 @@ void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
   cin >> A >> B >> C;
   double arg = B * B - 4 * A * C;
-  if (arg >= 0 && A != 0 && B != 0) {
+  if (arg >= 0) {
     double sarg = sqrt(arg);
-    double x1 = (-B + sarg) / (2 * A);
-    double x2 = (-B - sarg) / (2 * A);
-    cout << x1 << x2;
+    double r1 = (-B + sarg) / (2 * A);
+    double r2 = (-B - sarg) / (2 * A);
+    cout << r1 << r2;
   }
 }
 
@@ -93,12 +93,14 @@ int exercise_10(int a, int b) {
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
   cin >> number;
+  string si = "Se encontro Fibonacci";
+  string no = "Esto no es de Fibonacci";
   if (number == 11235813) {
-    cout << "Se encontro Fibonacci";
+    cout << si;
   } else {
-    cout << "Esto no es de Fibonacci";
+    cout << no;
   }
-  return "number";
+  return no;
 }
 
 void exercise_12(string color1, int numb1,
