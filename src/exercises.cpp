@@ -20,10 +20,11 @@ void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
   cin >> A >> B >> C;
   double arg = B * B - 4 * A * C;
-  if (arg >= 0) {
+  double div = 2 * A;
+  if (arg >= 0 && A != 0 && B != 0 && div != 0) {
     double sarg = sqrt(arg);
-    double r1 = (-B + sarg) / (2 * A);
-    double r2 = (-B - sarg) / (2 * A);
+    double r1 = (-B + sarg) / div;
+    double r2 = (-B - sarg) / div;
     cout << r1 << r2;
   }
 }
