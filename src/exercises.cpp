@@ -33,7 +33,7 @@ void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
   cin >> a >> b;
   if (b == 0) {
-    cout << "Imposible";
+    cout << "Impossible" << endl;
   } else {
     int div = a / b;
     cout << div << endl;
