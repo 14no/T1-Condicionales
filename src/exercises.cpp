@@ -100,10 +100,10 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   cout << w1 << w2 << w3 << w4 << w5 << endl;
   string msg;
   if (w1 == w5) {
-    msg = "Hemos encontrado algo!"
+    msg = "Hemos encontrado algo!";
     cout << msg << endl;
   } else {
-    msg = "Aun sin suerte"
+    msg = "Aun sin suerte";
     cout << msg << endl;
   }
 return msg;
