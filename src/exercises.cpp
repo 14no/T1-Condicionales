@@ -91,7 +91,6 @@ void exercise_8(long int seconds) {
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-  cin >> s1 >> s2 >> s3 >> s4 >> s5;
   char w1 = s1[0];
   char w2 = s2[0];
   char w3 = s3[0];
@@ -106,14 +105,15 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
     msg = "Aun sin suerte";
     cout << msg << endl;
   }
-return "msg";
+return msg;
 }
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
-   cin >> a >> b;
+  int result;
   if (a < 0 || b < 0){
-    cout << 0;
+    result = 0;
+    cout << result;
   } else {
     int sum = a + b;
     string s = to_string(sum);
@@ -126,15 +126,15 @@ return result;
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
-  cin >> number;
-  string si = "Se encontro Fibonacci";
-  string no = "Esto no es de Fibonacci";
+  string result;
   if (number == 11235813) {
-    cout << si;
+    result = "Se encontro Fibonacci";
+    cout << result << endl;
   } else {
-    cout << no;
+    result = "Esto no es de Fibonacci";
+    cout << result << endl;
   }
-  return no;
+  return result;
 }
 
 void exercise_12(string color1, int numb1,
