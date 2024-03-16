@@ -42,7 +42,16 @@ void exercise_3(int a, int b) {
 
 void exercise_4(double n, double a, double b, double x, double y) {
   // TODO: YOUR CODE HERE
+  cin >> n >> a >> b >> x >> y;
+  if(a < b) {
+    if (n > a) {
+      cout << n - (x / 100) << endl;
+    } else if(n < b) {
+      cout << n - (y / 100) << endl;
+    }
+  }
 }
+
 
 void exercise_5(char character) {
   // TODO: YOUR CODE HERE
