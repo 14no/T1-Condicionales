@@ -32,6 +32,8 @@ void exercise_2(double A, double B, double C) {
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
   cin >> a >> b;
+  if(a>=0 && a<=1000000 && b>=0 && b<=1000000){
+  }
   if (b == 0) {
     cout << "Imposible";
   } else {
