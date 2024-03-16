@@ -118,9 +118,10 @@ int exercise_10(int a, int b) {
     int sum = a + b;
     string s = to_string(sum);
     int ndig =s.size();
-    
-    cout << sum * ndig << endl;
+    int result = sum * ndig;
+    cout << result << endl;
   }
+return result;
 }
 
 string exercise_11(int number) {
