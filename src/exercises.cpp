@@ -101,6 +101,7 @@ void exercise_6(int number) {
 
 void exercise_7(double r) {
   // TODO: YOUR CODE HERE
+  
 }
 
 void exercise_8(long int seconds) {
