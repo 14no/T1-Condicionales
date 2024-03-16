@@ -75,12 +75,8 @@ void exercise_6(int number) {
 
 void exercise_7(double r) {
   // TODO: YOUR CODE HERE
-  cin >> r;
-  if (r < 0){
-    cout << "Error: Radius cannot be negative." << endl;
-  } else {
-    cout << 4 * 3, 14 * r * r << endl;
-  }
+  
+  
 }
 
 void exercise_8(long int seconds) {
