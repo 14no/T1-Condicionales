@@ -69,6 +69,34 @@ void exercise_5(char character) {
 
 void exercise_6(int number) {
   // TODO: YOUR CODE HERE
+  cin >> number;
+  switch (number){
+    case 1:
+    cout << "Monday" << endl;
+    break;
+    case 2:
+    cout << "Tuesday" << endl;
+    break;
+    case 3:
+    cout << "Wednesday" << endl;
+    break;
+    case 1:
+    cout << "Thursday" << endl;
+    break;
+    case 1:
+    cout << "Friday" << endl;
+    break;
+    case 1:
+    cout << "Saturday" << endl;
+    break;
+    case 1:
+    cout << "Sunday" << endl;
+    break;
+    default;
+    cout << "invalid input" << endl;
+    break;
+  }
+  
 }
 
 void exercise_7(double r) {
