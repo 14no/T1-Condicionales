@@ -111,15 +111,15 @@ return "msg";
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
-  cin >> a >> b;
+   cin >> a >> b;
   if (a < 0 || b < 0){
     cout << 0;
   } else {
     int sum = a + b;
     string s = to_string(sum);
-    int lenght = s.size();
-    int result = sum * lenght;
-    cout << result;
+    int ndig =s.size();
+    
+    cout << sum * ndig << endl;
   }
 }
 
