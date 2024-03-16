@@ -21,7 +21,7 @@ void exercise_2(double A, double B, double C) {
   cin >> A >> B >> C;
   double arg = B * B - 4 * A * C;
   double div = 2 * A;
-  if (arg >= 0 && A != 0 && B != 0 && div != 0) {
+  if (arg >= 0 && A != 0 && B != 0) {
     double sarg = sqrt(arg);
     double r1 = (-B + sarg) / div;
     double r2 = (-B - sarg) / div;
@@ -32,12 +32,11 @@ void exercise_2(double A, double B, double C) {
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
   cin >> a >> b;
-  if(a>=0 && a<=1000000 && b>=0 && b<=1000000){
-  }
   if (b == 0) {
-    cout << "Imposible";
+    cout << "Imposible" << endl;
   } else {
-    cout << a / b;
+    int div = a / b;
+    cout << div << endl;
   }
 }
 
