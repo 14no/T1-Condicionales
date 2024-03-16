@@ -91,20 +91,22 @@ void exercise_8(long int seconds) {
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
-   cin >> s1 >> s2 >> s3 >> s4 >> s5;
-    char w1 = s1[0];
-    char w2 = s2[0];
-    char w3 = s3[0];
-    char w4 = s4[0];
-    char w5 = s5[0];
-    cout << w1 << w2 << w3 << w4 << w5 << endl;
-    
-    if (w1 == w5) {
-        cout << "Hemos encontrado algo!";
-    } else {
-        cout << "Aun sin suerte";
-    }
-  return "";
+  cin >> s1 >> s2 >> s3 >> s4 >> s5;
+  char w1 = s1[0];
+  char w2 = s2[0];
+  char w3 = s3[0];
+  char w4 = s4[0];
+  char w5 = s5[0];
+  cout << w1 << w2 << w3 << w4 << w5 << endl;
+  string msg;
+  if (w1 == w5) {
+    msg = "Hemos encontrado algo!"
+    cout << msg << endl;
+  } else {
+    msg = "Aun sin suerte"
+    cout << msg << endl;
+  }
+  return msg;
 }
 
 int exercise_10(int a, int b) {
