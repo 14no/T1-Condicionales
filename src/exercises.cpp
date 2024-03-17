@@ -79,7 +79,26 @@ void exercise_5(char character) {
 
 void exercise_6(int number) {
   // TODO: YOUR CODE HERE
-  
+  void exercise_6(int number) {
+  // TODO: YOUR CODE HERE
+  switch (number) {
+    case 1: cout<<"Monday"<<endl;
+    break;
+    case 2: cout<<"Tuesday"<<endl;
+    break;
+    case 3: cout<<"Wednesday"<<endl;
+    break;
+    case 4: cout<<"Thursday"<<endl;
+    break;
+    case 5: cout<<"Friday"<<endl;
+    break;
+    case 6: cout<<"Saturday"<<endl;
+    break;
+    case 7: cout<<"Sunday"<<endl;
+    break;
+    default: cout<<"Invalid input"<<endl;
+  }
+}
   
 }
 
@@ -96,7 +115,37 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE
-
+void exercise_8(long int seconds) {
+  long int hours = seconds/3600;
+  long int minutes = (seconds - (hours * 3600))/60;
+  long int secondss = seconds - (hours * 3600) -(minutes * 60);
+  if (seconds<0)
+  {
+    cout<<"Error: Input seconds cannot be negative."<<endl;
+  }
+  else if (hours<10 && minutes<10 && secondss<10) //1
+  {
+    cout<<"0"<<hours<<":0"<<minutes<<":0"<<secondss<<endl;
+  }
+   else if (hours<10 && minutes>=10 && secondss<10) //2
+  {
+    cout<<"0"<<hours<<":"<<minutes<<":0"<<secondss<<endl;
+  } 
+  else if (hours<10 && minutes<10 && secondss>=10) //3
+  {
+    cout<<"0"<<hours<<":0"<<minutes<<":"<<secondss<<endl;
+  }
+  else if (hours<10 && minutes>=10 && secondss>=10) //4
+  {                             
+    cout<<"0"<<hours<<":"<<minutes<<":"<<secondss<<endl;
+  }
+  else if (hours>=10 && minutes>=10 && secondss>=10) //5
+  {
+    cout<<hours<<":"<<minutes<<":"<<secondss<<endl;
+  }
+  else if (hours>=10 && minutes<10 && secondss<10) //6
+  {
+    cout<<hours<<":0"<<minutes<<":0"<<s
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
