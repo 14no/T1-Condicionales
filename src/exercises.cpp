@@ -20,12 +20,22 @@ void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
   cin >> A >> B >> C;
   double arg = B * B - 4 * A * C;
-  double div = 2 * A;
-  if (arg >= 0 && A != 0 && B != 0) {
-    double sarg = sqrt(arg);
+  //double div = 2 * A;
+  if (arg > 0 && A != 0) {
+    double sarg = sqrt (arg);
     double r1 = (-B + sarg) / div;
     double r2 = (-B - sarg) / div;
-    cout << r1 << r2;
+    cout << r1 << r2 << endl;
+  } else if (arg == 0 && A != 0) {
+    double sarg = sqrt (arg) 
+    double r1 = (-B + sarg) / div;
+    cout << r1 << endl;
+  } else if (A == 0 && B != 0) {
+    cout << (-1 * (C))/ B << endl;
+  } else if (A!=0 && B==0 ) {
+      cout<< sqrt (C/A) <<endl;
+  } else {
+        cout<<"";
   }
 }
 
