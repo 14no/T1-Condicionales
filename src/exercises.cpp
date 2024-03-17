@@ -169,19 +169,15 @@ return msg;
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
-  int result;
-  if (a < 0 || b < 0){
-    result = 0;
-    cout << result;
-  } else {
+if (a < 0 || b < 0) {
+        return 0;
+    }
+
     int sum = a + b;
-    string s = to_string(sum);
-    int ndig =s.size();
-    int result = sum * ndig;
-    cout << result << endl;
+    int sum_digits = log10(sum) + 1;
+
+    return sum * sum_digits;
   }
-return result;
-}
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
