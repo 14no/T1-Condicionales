@@ -148,6 +148,7 @@ void exercise_8(long int seconds) {
     cout<<hours<<":0"<<minutes<<":0"<<s
 }
 
+
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
   // TODO: YOUR CODE HERE
   char w1 = s1[0];
@@ -197,7 +198,39 @@ void exercise_12(string color1, int numb1,
                  string color3, int numb3,
                  string color4, int numb4) {
   // TODO: YOUR CODE HERE
+  bool match1 = (color1 == color4 || color4 == "?") && (numb1 == numb4 || numb4 == -1);
+     bool match2 = (color2 == color4 || color4 == "?") && (numb2 == numb4 || numb4 == -1);
+     bool match3 = (color3 == color4 || color4 == "?") && (numb3 == numb4 || numb4 == -1);
+
+     if (match1)
+    {
+       cout << "1" << endl;
+    } 
+     if (match2) 
+    {
+      cout << "2" << endl;
+    } 
+     if (match3) 
+    {
+      cout << "3" << endl;
+    } 
 }
+
+string exercise_13(int age, int years_of_experience) {
+  // TODO: YOUR CODE HERE
+  cin>> age;
+  cin >> years_of_experience;
+  if (age>=18 && years_of_experience>=5)
+  {
+    return"Senior project manager";
+  } 
+  else if (age>=18 && years_of_experience>=3)
+  {
+    return"Project manager";
+  } 
+  else if (age>=18)
+  {
+    return"Project coordinator";
 
 string exercise_13(int age, int years_of_experience) {
   // TODO: YOUR CODE HERE
