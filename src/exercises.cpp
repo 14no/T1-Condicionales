@@ -231,22 +231,81 @@ string exercise_13(int age, int years_of_experience) {
   else if (age>=18)
   {
     return"Project coordinator";
-
-string exercise_13(int age, int years_of_experience) {
-  // TODO: YOUR CODE HERE
-  return "";
+  } 
+  else
+  {
+    return"Not eligible";
+  } 
 }
 
 string exercise_14(int number_of_docs) {
   // TODO: YOUR CODE HERE
-
-  return "";
+   if(number_of_docs>=2)
+  {
+    return to_string(number_of_docs)+" documentos encontrados";
+  }
+  else if (number_of_docs==1)
+  {
+    return"Se encontro un documento";
+  }
+  else
+  {
+    return"No se encontraron documentos";
+  }
 }
 
 void exercise_15(int a, int b, int c) {
   // TODO: YOUR CODE HERE
+  cout<<"Los valores son: a = "<<a<<" b = "<<b<<" y c = "<<c<<endl;
+  cout<<"Permutamos: a => b, b => c, c => a"<<endl;
+  cout<<"Los valores despues de la permutacion son: a = "<<c<<" b = "<<a<<" c = "<<b<<endl;
 }
 
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
+ if (debut < 0 || debut > 24 || fin < 0 || fin > 24) 
+ {
+        cout << "Las horas deben estar entre 0 y 24!" << endl;
+        return;
+}
+    if (debut == fin) 
+    {
+       cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
+        return;
+    }
+
+    if (debut > fin) 
+    {
+        cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
+        return;
+    }
+
+    int costo_total = 0;
+    int hora_actual = debut;
+    int horas_tarifa_1 = 0;
+    int horas_tarifa_2 = 0;
+
+    while (hora_actual < fin) 
+    {
+        if ((hora_actual >= 0 && hora_actual < 7) || (hora_actual >= 17 && hora_actual <= 24)) {
+            horas_tarifa_1++;
+        } else {
+            horas_tarifa_2++;
+        }
+        hora_actual++;
+    }
+
+    cout << "Haz alquilado una bicicleta por" << endl;
+
+    if (horas_tarifa_1 > 0) 
+    {
+        cout << horas_tarifa_1 << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
+        costo_total += horas_tarifa_1;
+    }
+    if (horas_tarifa_2 > 0) {
+        cout << horas_tarifa_2 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
+        costo_total += horas_tarifa_2 * 2;
+    }
+
+    cout << "El monto total a pagar es de " << costo_total << " boliviano(s)." << endl;
 }
