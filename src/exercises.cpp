@@ -115,7 +115,6 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE
-void exercise_8(long int seconds) {
   long int hours = seconds/3600;
   long int minutes = (seconds - (hours * 3600))/60;
   long int secondss = seconds - (hours * 3600) -(minutes * 60);
@@ -173,7 +172,6 @@ int exercise_10(int a, int b) {
 if (a < 0 || b < 0) {
         return 0;
     }
-
     int sum = a + b;
     int sum_digits = log10(sum) + 1;
 
@@ -193,119 +191,3 @@ string exercise_11(int number) {
   return result;
 }
 
-void exercise_12(string color1, int numb1,
-                 string color2, int numb2,
-                 string color3, int numb3,
-                 string color4, int numb4) {
-  // TODO: YOUR CODE HERE
-  bool match1 = (color1 == color4 || color4 == "?") && (numb1 == numb4 || numb4 == -1);
-     bool match2 = (color2 == color4 || color4 == "?") && (numb2 == numb4 || numb4 == -1);
-     bool match3 = (color3 == color4 || color4 == "?") && (numb3 == numb4 || numb4 == -1);
-
-     if (match1)
-    {
-       cout << "1" << endl;
-    } 
-     if (match2) 
-    {
-      cout << "2" << endl;
-    } 
-     if (match3) 
-    {
-      cout << "3" << endl;
-    } 
-}
-
-string exercise_13(int age, int years_of_experience) {
-  // TODO: YOUR CODE HERE
-  cin>> age;
-  cin >> years_of_experience;
-  if (age>=18 && years_of_experience>=5)
-  {
-    return"Senior project manager";
-  } 
-  else if (age>=18 && years_of_experience>=3)
-  {
-    return"Project manager";
-  } 
-  else if (age>=18)
-  {
-    return"Project coordinator";
-  } 
-  else
-  {
-    return"Not eligible";
-  } 
-}
-
-string exercise_14(int number_of_docs) {
-  // TODO: YOUR CODE HERE
-   if(number_of_docs>=2)
-  {
-    return to_string(number_of_docs)+" documentos encontrados";
-  }
-  else if (number_of_docs==1)
-  {
-    return"Se encontro un documento";
-  }
-  else
-  {
-    return"No se encontraron documentos";
-  }
-}
-
-void exercise_15(int a, int b, int c) {
-  // TODO: YOUR CODE HERE
-  cout<<"Los valores son: a = "<<a<<" b = "<<b<<" y c = "<<c<<endl;
-  cout<<"Permutamos: a => b, b => c, c => a"<<endl;
-  cout<<"Los valores despues de la permutacion son: a = "<<c<<" b = "<<a<<" c = "<<b<<endl;
-}
-
-void exercise_16(int debut, int fin) {
-  // TODO: YOUR CODE HERE
- if (debut < 0 || debut > 24 || fin < 0 || fin > 24) 
- {
-        cout << "Las horas deben estar entre 0 y 24!" << endl;
-        return;
-}
-    if (debut == fin) 
-    {
-       cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
-        return;
-    }
-
-    if (debut > fin) 
-    {
-        cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
-        return;
-    }
-
-    int costo_total = 0;
-    int hora_actual = debut;
-    int horas_tarifa_1 = 0;
-    int horas_tarifa_2 = 0;
-
-    while (hora_actual < fin) 
-    {
-        if ((hora_actual >= 0 && hora_actual < 7) || (hora_actual >= 17 && hora_actual <= 24)) {
-            horas_tarifa_1++;
-        } else {
-            horas_tarifa_2++;
-        }
-        hora_actual++;
-    }
-
-    cout << "Haz alquilado una bicicleta por" << endl;
-
-    if (horas_tarifa_1 > 0) 
-    {
-        cout << horas_tarifa_1 << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
-        costo_total += horas_tarifa_1;
-    }
-    if (horas_tarifa_2 > 0) {
-        cout << horas_tarifa_2 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
-        costo_total += horas_tarifa_2 * 2;
-    }
-
-    cout << "El monto total a pagar es de " << costo_total << " boliviano(s)." << endl;
-}
