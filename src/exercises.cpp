@@ -26,7 +26,7 @@ void exercise_2(double A, double B, double C) {
     double r2 = (-B - sarg) / div;
       cout << r1 << " " << r2 << endl;
   } else if (arg == 0 && A != 0) {
-    double sarg = sqrt (arg) 
+    double sarg = sqrt (arg);
     double r1 = (-B + sarg) / div;
       cout << r1 << endl;
   }
@@ -128,7 +128,7 @@ void exercise_8(long int seconds) {
   }
   else if (hours>=10 && minutes<10 && secondss<10) //6
   {
-    cout<<hours<<":0"<<minutes<<":0"<<s
+    cout<<hours<<":0"<<minutes<<":0"<<
   }
 }
 
@@ -239,7 +239,6 @@ void exercise_16(int debut, int fin) {
     cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
     return;
   }
-
   int costo_total = 0;
   int hora_actual = debut;
   int horas_tarifa_1 = 0;
@@ -265,5 +264,5 @@ void exercise_16(int debut, int fin) {
     costo_total += horas_tarifa_2 * 2;
   }
   cout << "El monto total a pagar es de " << costo_total << " boliviano(s)." << endl;
-  }
+}
   
