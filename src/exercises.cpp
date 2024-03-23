@@ -68,6 +68,7 @@ void exercise_7(double r) {
     cout << "Error: Radius cannot be negative.";
   } else if (r >= 0) {
     cout << 4 * 3,14 * r * r;
+  }
 }
 
 void exercise_8(long int seconds) {
