@@ -85,7 +85,15 @@ int exercise_10(int a, int b) {
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
-  return "";
+  string msg;
+  if (number == 11235813) { 
+    msg = "Se encontró Fibonacci."
+    cout << msg << endl;
+  } else {
+    msg = "Esto no es Fibonacci."
+    cout << msg << endl;
+  }
+  return msg;
 }
 
 void exercise_12(string color1, int numb1,
