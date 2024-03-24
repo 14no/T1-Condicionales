@@ -17,18 +17,22 @@ void exercise_1(string s1, string s2, string s3) {
 
 void exercise_2(double A, double B, double C) {
   // TODO: YOUR CODE HERE
-  double arg = B * B - 4 * A * C;
-  double div = 2 * A;
-  if (arg > 0 && A != 0) {
-    double sarg = sqrt(arg);
+  double arg, div, sarg;
+  arg = B * B - 4 * A * C;
+  sarg = sqrt(arg);
+  div = 2 * A;
+    
+  if (A == 0 && B != 0) {
+    cout << ((-1 * C) / B) << endl;
+  } else if (B == 0 && A == 0) {
+  } else if (arg > 0 && C != 0) {
     double r1 = (-B + sarg) / div;
     double r2 = (-B - sarg) / div;
     cout << r1 << " " << r2 << endl;
-  } else if (arg == 0 && A != 0) {
-    double sarg = sqrt (arg);
+  } else if (arg == 0 && C != 0) {
     double r1 = (-B + sarg) / div;
     cout << r1 << endl;
-  }
+  } 
 }
 
 void exercise_3(int a, int b) {
@@ -78,7 +82,7 @@ void exercise_7(double r) {
   if (r >= 0) {
     cout << 4 * 3.14 * r * r << endl;
   } else if (r < 0) {
-      cout << "Error: Radius cannot be negative." << endl;
+    cout << "Error: Radius cannot be negative." << endl;
   }
 }
 
