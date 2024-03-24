@@ -63,10 +63,10 @@ void exercise_6(int number) {
 
 void exercise_7(double r) {
   // TODO: YOUR CODE HERE
-  if (r < 0) {
-    cout << "Error: Radius cannot be negative.";
-  } else if (r >= 0) {
-    cout << 4 * 3,14 * r * r;
+  if (r >= 0) {
+    cout << 4 * pi * r * r * r;
+  } else if (r < o) {
+      cout << "Error: Radius cannot be negative.";
   }
 }
 
