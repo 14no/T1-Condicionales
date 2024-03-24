@@ -152,9 +152,7 @@ string exercise_14(int number_of_docs) {
   } else if (number_of_docs == 1) {
     return "Se encontro un documento";
   } else if (number_of_docs >= 2) {
-    string number = to_string(number_of_docs);
-    string result = msg + " documentos encontrados"s;
-    return result;
+    return to_string(number_of_docs)+" documentos encontrados"s;
   } 
 }
 
