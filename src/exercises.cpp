@@ -87,10 +87,10 @@ string exercise_11(int number) {
   // TODO: YOUR CODE HERE
   string msg;
   if (number == 11235813) { 
-    msg = "Se encontró Fibonacci."
+    msg = "Se encontró Fibonacci.";
     cout << msg << endl;
   } else {
-    msg = "Esto no es Fibonacci."
+    msg = "Esto no es Fibonacci.";
     cout << msg << endl;
   }
   return msg;
