@@ -64,9 +64,9 @@ void exercise_6(int number) {
 void exercise_7(double r) {
   // TODO: YOUR CODE HERE
   if (r >= 0) {
-    cout << 4 * 3,14 * r * r;
+    cout << 4 * 3,14 * r * r << endl;
   } else if (r < 0) {
-      cout << "Error: Radius cannot be negative.";
+      cout << "Error: Radius cannot be negative." << endl;
   }
 }
 
@@ -81,8 +81,7 @@ string exercise_9(string s1, string s2, string s3, string s4, string s5) {
 
 int exercise_10(int a, int b) {
   // TODO: YOUR CODE HERE
-  
-  }
+}
 
 string exercise_11(int number) {
   // TODO: YOUR CODE HERE
