@@ -109,7 +109,7 @@ int exercise_10(int a, int b) {
   } else {
     int sum = a + b;
     string s = to_string(sum);
-    int digits = s.size;
+    int digits = s.size();
     result = sum * digits;
     cout << result << endl;
   }
