@@ -165,6 +165,7 @@ void exercise_12(string color1, int numb1,
                  string color3, int numb3,
                  string color4, int numb4) {
   // TODO: YOUR CODE HERE
+
 }
 
 string exercise_13(int age, int years_of_experience) {
@@ -200,5 +201,12 @@ void exercise_15(int a, int b, int c) {
 
 void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
+  if (debut > 24 || debut < 0 || fin > 24 || fin < 0) {
+    cout << "Las horas deben estar entre 0 y 24!" << endl;
+  } else if (debut == fin) {
+    cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
+  } else if (debut > fin) {
+    cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
+  }
 }
   
