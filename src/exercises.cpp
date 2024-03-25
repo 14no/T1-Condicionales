@@ -226,7 +226,7 @@ void exercise_16(int debut, int fin) {
       cout << horas1 << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
         if (7 <= debut && debut <= 17 && 7 <= fin && fin <= 17) {
         int horas2 = fin - debut;
-        int price = horas * 2;
+        int price = horas2 * 2;
         int total_price = horas1 + price;
         cout << horas2 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
         cout << "El monto total a pagar es de " << total_price << " boliviano(s)." << endl;
