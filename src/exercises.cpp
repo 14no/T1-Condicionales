@@ -105,6 +105,24 @@ void exercise_7(double r) {
 
 void exercise_8(long int seconds) {
   // TODO: YOUR CODE HERE
+  long int hrs, mins, secs, rest_hrs;
+  rest_hrs = seconds % 3600;
+  hrs = seconds / 3600;
+  mins = rest_hrs / 60;
+  secs = rest_hrs % 60;
+  if (seconds < 0) {
+    cout << "Error: Input seconds cannot be negative." << endl;
+  } else if (hrs < 10 && mins < 10 && secs < 10){
+    cout << "0" << hrs << ":0" << mins << ":0" << secs << endl;
+  } else if (hrs < 10 && mins < 10 && secs >= 10){
+    cout << "0" << hrs << ":0" << mins << ":" << secs << endl;
+  } else if (hrs < 10 && mins >= 10 && secs >= 10){
+    cout << "0" << hrs << ":" << mins << ":" << secs << endl;
+  } else if (hrs < 10 && mins >= 10 && secs < 10){
+    cout << "0" << hrs << ":" << mins << ":0" << secs << endl;
+  } else if (hrs < 10 && mins < 10 && secs < 10){
+    cout << "0" << hrs << ":0" << mins << ":0" << secs << endl;
+  }
 }
 
 string exercise_9(string s1, string s2, string s3, string s4, string s5) {
