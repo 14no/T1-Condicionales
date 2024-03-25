@@ -203,35 +203,38 @@ void exercise_16(int debut, int fin) {
   // TODO: YOUR CODE HERE
   if (debut > 24 || debut < 0 || fin > 24 || fin < 0) {
     cout << "Las horas deben estar entre 0 y 24!" << endl;
-  } else if (debut == fin) {
+  }
+  if (debut == fin) {
     cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
-  } else if (debut > fin) {
+  }
+  if (debut > fin) {
     cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
+  }
 
-  } else if (0 <= debut && debut <= 24 && 0 <= fin && fin <= 24) {
-    if (0 <= debut && debut <= 7 && 0 <= fin && fin <= 7 || 17 <= debut && debut <= 24 && 17 <= fin && fin <= 24) {
-      int horas = fin - debut;
-      cout << "Haz alquilado una bicicleta por" << endl;
-      cout << horas << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
-      cout << "El monto total a pagar es de " << horas << " boliviano(s)." << endl;
-    } else if (7 <= debut && debut <= 17 && 7 <= fin && fin <= 17) {
-      int horas = fin - debut;
-      int price = horas * 2;
-      cout << "Haz alquilado una bicicleta por" << endl;
-      cout << horas << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
-      cout << "El monto total a pagar es de " << price << " boliviano(s)." << endl;
-    } else if (0 <= debut && debut <= 7 && 0 <= fin && fin <= 7 || 17 <= debut && debut <= 24 && 17 <= fin && fin <= 24) {
-      int horas1 = fin - debut;
-      cout << "Haz alquilado una bicicleta por" << endl;
-      cout << horas1 << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
-        if (7 <= debut && debut <= 17 && 7 <= fin && fin <= 17) {
-        int horas2 = fin - debut;
-        int price = horas2 * 2;
-        int total_price = horas1 + price;
-        cout << horas2 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
-        cout << "El monto total a pagar es de " << total_price << " boliviano(s)." << endl;
-        }
-    }
+  if (0 <= debut && debut <= 7 && 0 <= fin && fin <= 7 || 17 <= debut && debut <= 24 && 17 <= fin && fin <= 24) {
+    int horas = fin - debut;
+    cout << "Haz alquilado una bicicleta por" << endl;
+    cout << horas << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
+    cout << "El monto total a pagar es de " << horas << " boliviano(s)." << endl;
+  } else if (7 <= debut && debut <= 17 && 7 <= fin && fin <= 17) {
+    int horas = fin - debut;
+    int price = horas * 2;
+    cout << "Haz alquilado una bicicleta por" << endl;
+    cout << horas << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
+    cout << "El monto total a pagar es de " << price << " boliviano(s)." << endl;
+      
+  } else if (0 <= debut && debut <= 7 && 0 <= fin && fin <= 7 || 17 <= debut && debut <= 24 && 17 <= fin && fin <= 24) {
+    int horas1 = fin - debut;
+    cout << "Haz alquilado una bicicleta por" << endl;
+    cout << horas1 << " hora(s) con el tarifario de 1 boliviano(s)" << endl;
+      if (7 <= debut && debut <= 17 && 7 <= fin && fin <= 17) {
+      int horas2 = fin - debut;
+      int price = horas2 * 2;
+      int total_price = horas1 + price;
+      cout << horas2 << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
+      cout << "El monto total a pagar es de " << total_price << " boliviano(s)." << endl;
+      }
   }
 }
+
   
