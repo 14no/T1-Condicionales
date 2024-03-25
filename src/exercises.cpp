@@ -207,6 +207,13 @@ void exercise_16(int debut, int fin) {
     cout << "Que extraño, no has alquilado tu bicicleta por mucho tiempo!" << endl;
   } else if (debut > fin) {
     cout << "Que extraño, el inicio del alquiler es después del final..." << endl;
+  } else if (0 <= debut && debut <= 24 && 0 <= fin && fin <= 24) {
+    if (0 <= debut && debut <= 7 && 0 <= fin && fin <= 7) {
+      int horas = fin - debut;
+      cout << "Has alquilado una bicicleta por" << endl;
+      cout << horas << "hora(s) con el tarifario de 1 boliviano(s)" << endl;
+      cout << "El monto total a pagar es de " << horas << " boliviano(s)." << endl;
+    }
   }
 }
   
