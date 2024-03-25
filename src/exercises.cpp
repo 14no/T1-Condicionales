@@ -222,7 +222,7 @@ void exercise_16(int debut, int fin) {
       int horas = fin - debut;
       int price = horas * 2;
       cout << "Has alquilado una bicicleta por" << endl;
-      cout << horas << "hora(s) con el tarifario de 2 boliviano(s)" << endl;
+      cout << horas << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
       cout << "El monto total a pagar es de " << price << " boliviano(s)." << endl;
     }
     }
