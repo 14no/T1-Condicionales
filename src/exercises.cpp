@@ -228,12 +228,5 @@ void exercise_16(int debut, int fin) {
     cout << "Haz alquilado una bicicleta por" << endl;
     cout << horas << " hora(s) con el tarifario de 2 boliviano(s)" << endl;
     cout << "El monto total a pagar es de " << price << " boliviano(s)." << endl;
-  }
-
-  else {
-    cout << "Haz alquilado una bicicleta por" << endl;
-    cout << "2 hora(s) con el tarifario de 1 boliviano(s)" << endl;
-    cout << "7 hora(s) con el tarifario de 2 boliviano(s)" << endl;
-    cout << "El monto total a pagar es de 16 boliviano(s)." << endl;
   } 
 } 
