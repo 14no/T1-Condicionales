@@ -235,4 +235,5 @@ void exercise_16(int debut, int fin) {
     cout << "2 hora(s) con el tarifario de 1 boliviano(s)" << endl;
     cout << "7 hora(s) con el tarifario de 2 boliviano(s)" << endl;
     cout << "El monto total a pagar es de 16 boliviano(s)." << endl;
+  } 
 } 
