@@ -169,7 +169,7 @@ void exercise_12(string color1, int numb1,
     cout << "1" << endl;
   } 
   if ((color2 == color4 || color4 == "?") && (numb2 == numb4 || numb4 == -1)) {
-  cout << "2" << endl
+  cout << "2" << endl;
   }
   if ((color3 == color4 || color4 == "?") && (numb3 == numb4 || numb4 == -1)) {
   cout << "3" << endl;
