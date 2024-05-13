@@ -5,7 +5,6 @@ using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
-  cin >> s1 >> s2 >> s3;
   string min = s1;
   if (s2 < min) {
     min = s2;
@@ -37,7 +36,6 @@ void exercise_2(double A, double B, double C) {
 
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
-  cin >> a >> b;
   if (b == 0) {
     cout << "Impossible" << endl;
   } else {
@@ -48,7 +46,6 @@ void exercise_3(int a, int b) {
 
 void exercise_4(double n, double a, double b, double x, double y) {
   // TODO: YOUR CODE HERE
-  cin >> n >> a >> b >> x >> y;
   if(a < b) {
     if (n > b) {
       cout << n - ((y * n) / 100) << endl;
@@ -63,7 +60,6 @@ void exercise_4(double n, double a, double b, double x, double y) {
 
 void exercise_5(char character) {
   // TODO: YOUR CODE HERE
-  cin >> character;
   if (65 <= character && character <= 90) {
     cout << "upper-case alphabet" << endl;
   } else if (97 <= character && character <= 122) {
